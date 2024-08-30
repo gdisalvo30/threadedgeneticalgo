@@ -1,0 +1,1040 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 25.22      0.56     0.56  1643870     0.34     0.34  Individual::cal_fitness()
+ 21.88      1.05     0.49  1641870     0.30     0.76  Individual::mate(Individual)
+ 15.18      1.40     0.34                             _init
+  6.03      1.53     0.14 92931518     0.00     0.00  random_num(int, int)
+  1.79      1.57     0.04  1805427     0.02     0.04  void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter)
+  1.56      1.60     0.04 15035274     0.00     0.00  Individual::~Individual()
+  1.56      1.64     0.04  7014758     0.00     0.01  bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const
+  1.56      1.68     0.04                             frame_dummy
+  1.34      1.71     0.03 26538777     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const
+  1.34      1.74     0.03 10504322     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const
+  1.34      1.76     0.03  6749910     0.00     0.00  Individual::Individual(Individual const&)
+  1.34      1.79     0.03  1643870     0.02     0.36  Individual::Individual(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  1.12      1.82     0.03  9507401     0.00     0.00  operator<(Individual const&, Individual const&)
+  1.12      1.84     0.03  2321401     0.01     0.03  void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&)
+  0.89      1.86     0.02  6641494     0.00     0.00  Individual::Individual(Individual&&)
+  0.89      1.89     0.02  2512056     0.01     0.01  bool __gnu_cxx::operator< <Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&)
+  0.89      1.91     0.02  2321401     0.01     0.02  void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&)
+  0.89      1.93     0.02  2319401     0.01     0.04  void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&)
+  0.89      1.95     0.02  1824300     0.01     0.02  void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&)
+  0.89      1.97     0.02  1643872     0.01     0.01  bool __gnu_cxx::__is_null_pointer<char const>(char const*)
+  0.89      1.99     0.02   156771     0.13     1.07  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.67      2.00     0.01  5814928     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator--()
+  0.67      2.02     0.01  4644962     0.00     0.00  Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&)
+  0.67      2.03     0.01  2512056     0.01     0.02  void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.67      2.04     0.01   146104     0.10     0.17  std::_Vector_base<Individual, std::allocator<Individual> >::_M_allocate(unsigned long)
+  0.67      2.06     0.01                             void std::__sort_heap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter&)
+  0.45      2.07     0.01 14170210     0.00     0.00  std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&)
+  0.45      2.08     0.01  7528716     0.00     0.00  Individual::operator=(Individual&&)
+  0.45      2.09     0.01  4145701     0.00     0.00  operator new(unsigned long, void*)
+  0.45      2.10     0.01  1881069     0.01     0.01  bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&)
+  0.45      2.11     0.01  1824300     0.01     0.01  Individual::operator=(Individual const&)
+  0.45      2.12     0.01  1824300     0.01     0.12  std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&)
+  0.45      2.13     0.01  1643872     0.01     0.02  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.45      2.14     0.01   986798     0.01     0.01  mutated_genes()
+  0.45      2.15     0.01   328714     0.03     0.03  std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator()
+  0.45      2.16     0.01   292208     0.03     0.03  __gnu_cxx::new_allocator<Individual>::max_size() const
+  0.45      2.17     0.01   292208     0.03     0.41  Individual* std::__relocate_a<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&)
+  0.45      2.18     0.01   292208     0.03     0.37  Individual* std::__relocate_a_1<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&)
+  0.45      2.19     0.01   146104     0.07     0.07  __gnu_cxx::new_allocator<Individual>::allocate(unsigned long, void const*)
+  0.45      2.20     0.01    18263     0.55     0.78  void std::_Destroy<Individual*>(Individual*, Individual*)
+  0.45      2.21     0.01                             void std::__heap_select<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.22      2.21     0.01  3794544     0.00     0.00  Individual const& std::forward<Individual const&>(std::remove_reference<Individual const&>::type&)
+  0.22      2.22     0.01  1074556     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&)
+  0.22      2.23     0.01   292208     0.02     0.43  std::vector<Individual, std::allocator<Individual> >::_S_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&)
+  0.22      2.23     0.01    18263     0.27     0.27  std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::~_Vector_impl()
+  0.22      2.23     0.01    18263     0.27     5.81  void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.22      2.24     0.01     2000     2.50     2.64  Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&)
+  0.00      2.24     0.00  8784503     0.00     0.00  Individual* std::__addressof<Individual>(Individual&)
+  0.00      2.24     0.00  4614415     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator++()
+  0.00      2.24     0.00  3484473     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::operator[](unsigned long)
+  0.00      2.24     0.00  2512056     0.00     0.01  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&)
+  0.00      2.24     0.00  2492643     0.00     0.00  bool __gnu_cxx::__ops::_Val_less_iter::operator()<Individual, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(Individual&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const
+  0.00      2.24     0.00  2319401     0.00     0.00  void __gnu_cxx::new_allocator<Individual>::destroy<Individual>(Individual*)
+  0.00      2.24     0.00  2319401     0.00     0.00  void std::allocator_traits<std::allocator<Individual> >::destroy<Individual>(std::allocator<Individual>&, Individual*)
+  0.00      2.24     0.00  1826300     0.00     0.00  void std::_Destroy<Individual>(Individual*)
+  0.00      2.24     0.00  1824300     0.00     0.02  void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&)
+  0.00      2.24     0.00  1805427     0.00     0.00  __gnu_cxx::__ops::__val_comp_iter(__gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00  1643872     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      2.24     0.00  1643872     0.00     0.01  void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  0.00      2.24     0.00  1643872     0.00     0.00  std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag)
+  0.00      2.24     0.00  1643872     0.00     0.00  std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&)
+  0.00      2.24     0.00  1643872     0.00     0.00  std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*)
+  0.00      2.24     0.00   876624     0.00     0.00  Individual* std::__niter_base<Individual*>(Individual*)
+  0.00      2.24     0.00   671206     0.00     0.01  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&)
+  0.00      2.24     0.00   620902     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::size() const
+  0.00      2.24     0.00   548565     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const
+  0.00      2.24     0.00   438312     0.00     0.00  __gnu_cxx::new_allocator<Individual>::_M_max_size() const
+  0.00      2.24     0.00   292208     0.00     0.00  std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() const
+  0.00      2.24     0.00   292208     0.00     0.03  std::vector<Individual, std::allocator<Individual> >::max_size() const
+  0.00      2.24     0.00   292208     0.00     0.03  std::allocator_traits<std::allocator<Individual> >::max_size(std::allocator<Individual> const&)
+  0.00      2.24     0.00   292208     0.00     0.03  std::vector<Individual, std::allocator<Individual> >::_S_max_size(std::allocator<Individual> const&)
+  0.00      2.24     0.00   292208     0.00     0.41  std::vector<Individual, std::allocator<Individual> >::_S_do_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&, std::integral_constant<bool, true>)
+  0.00      2.24     0.00   292208     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      2.24     0.00   184610     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::end()
+  0.00      2.24     0.00   182610     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::begin()
+  0.00      2.24     0.00   164367     0.00     0.00  std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long)
+  0.00      2.24     0.00   158771     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator-(long) const
+  0.00      2.24     0.00   156771     0.00     0.05  void std::__move_median_to_first<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00   156771     0.00     1.14  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00   146104     0.00     0.00  __gnu_cxx::new_allocator<Individual>::deallocate(Individual*, unsigned long)
+  0.00      2.24     0.00   146104     0.00     0.07  std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const
+  0.00      2.24     0.00   146104     0.00     0.00  std::allocator_traits<std::allocator<Individual> >::deallocate(std::allocator<Individual>&, Individual*, unsigned long)
+  0.00      2.24     0.00   146104     0.00     0.07  std::allocator_traits<std::allocator<Individual> >::allocate(std::allocator<Individual>&, unsigned long)
+  0.00      2.24     0.00   146104     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      2.24     0.00   145944     0.00     1.19  void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&)
+  0.00      2.24     0.00    46926     0.00     0.00  Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    36486     0.00     0.00  __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual const* const&)
+  0.00      2.24     0.00    36486     0.00     0.00  __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::base() const
+  0.00      2.24     0.00    36486     0.00     0.00  __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    36486     0.00     0.00  Individual const* std::__niter_base<Individual const*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    20853     0.00     0.01  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*)
+  0.00      2.24     0.00    18263     0.00     0.00  __gnu_cxx::new_allocator<Individual>::new_allocator()
+  0.00      2.24     0.00    18263     0.00     0.00  __gnu_cxx::new_allocator<Individual>::~new_allocator()
+  0.00      2.24     0.00    18263     0.00     0.00  __gnu_cxx::__ops::__iter_less_iter()
+  0.00      2.24     0.00    18263     0.00     0.01  bool __gnu_cxx::operator==<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&)
+  0.00      2.24     0.00    18263     0.00     0.00  std::allocator<Individual>::allocator()
+  0.00      2.24     0.00    18263     0.00     0.00  std::allocator<Individual>::~allocator()
+  0.00      2.24     0.00    18263     0.00     0.23  void std::_Destroy_aux<false>::__destroy<Individual*>(Individual*, Individual*)
+  0.00      2.24     0.00    18263     0.00     0.00  std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::_Vector_impl()
+  0.00      2.24     0.00    18263     0.00     0.00  std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      2.24     0.00    18263     0.00     0.00  std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_base()
+  0.00      2.24     0.00    18263     0.00     0.27  std::_Vector_base<Individual, std::allocator<Individual> >::~_Vector_base()
+  0.00      2.24     0.00    18263     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::vector()
+  0.00      2.24     0.00    18263     0.00     1.08  std::vector<Individual, std::allocator<Individual> >::~vector()
+  0.00      2.24     0.00    18263     0.00     0.98  void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00    18263     0.00     9.93  void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00    18263     0.00     4.54  void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00    18263     0.00     0.00  std::__lg(long)
+  0.00      2.24     0.00    18263     0.00    15.75  void std::sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    18263     0.00    15.75  void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  0.00      2.24     0.00    18263     0.00     0.78  void std::_Destroy<Individual*, Individual>(Individual*, Individual*, std::allocator<Individual>&)
+  0.00      2.24     0.00    18243     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<Individual>, Individual>::_S_propagate_on_copy_assign()
+  0.00      2.24     0.00    18243     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::end() const
+  0.00      2.24     0.00    18243     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::begin() const
+  0.00      2.24     0.00    18243     0.00     0.00  std::vector<Individual, std::allocator<Individual> >::capacity() const
+  0.00      2.24     0.00    18243     0.00     0.55  Individual* std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m<Individual const*, Individual*>(Individual const*, Individual const*, Individual*)
+  0.00      2.24     0.00    18243     0.00     0.01  void std::_Destroy_aux<false>::__destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    18243     0.00     0.61  std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&)
+  0.00      2.24     0.00    18243     0.00     0.56  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    18243     0.00     0.55  Individual* std::__copy_move_a1<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*)
+  0.00      2.24     0.00    18243     0.00     0.55  Individual* std::__copy_move_a2<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*)
+  0.00      2.24     0.00    18243     0.00     0.56  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::copy<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    18243     0.00     0.01  void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00    18243     0.00     0.01  void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, std::allocator<Individual>&)
+  0.00      2.24     0.00     5220     0.00     0.00  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00     2610     0.00     0.01  Individual* std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<Individual*, Individual*>(Individual*, Individual*, Individual*)
+  0.00      2.24     0.00     2610     0.00     0.02  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::move_backward<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00     2610     0.00     0.02  __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  0.00      2.24     0.00     2610     0.00     0.01  Individual* std::__copy_move_backward_a1<true, Individual*, Individual*>(Individual*, Individual*, Individual*)
+  0.00      2.24     0.00     2610     0.00     0.01  Individual* std::__copy_move_backward_a2<true, Individual*, Individual*>(Individual*, Individual*, Individual*)
+  0.00      2.24     0.00     2000     0.00     0.64  create_gnome[abi:cxx11]()
+  0.00      2.24     0.00     2000     0.00     0.01  std::vector<Individual, std::allocator<Individual> >::back()
+  0.00      2.24     0.00     2000     0.00     2.64  std::vector<Individual, std::allocator<Individual> >::push_back(Individual&&)
+  0.00      2.24     0.00      160     0.00     1.20  void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&)
+  0.00      2.24     0.00        1     0.00     0.04  __static_initialization_and_destruction_0(int, int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.45% of 2.24 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     82.1    0.00    1.84                 main [1]
+                0.49    0.76 1641870/1641870     Individual::mate(Individual) [2]
+                0.00    0.29   18263/18263       void std::sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [6]
+                0.01    0.21 1824300/1824300     std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&) [8]
+                0.02    0.00 4925610/6749910     Individual::Individual(Individual const&) [33]
+                0.00    0.02   18263/18263       std::vector<Individual, std::allocator<Individual> >::~vector() [42]
+                0.02    0.00 6569480/15035274     Individual::~Individual() [28]
+                0.00    0.01   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+                0.00    0.01    2000/2000        std::vector<Individual, std::allocator<Individual> >::push_back(Individual&&) [73]
+                0.00    0.00 3283740/92931518     random_num(int, int) [13]
+                0.00    0.00    2000/2000        create_gnome[abi:cxx11]() [83]
+                0.00    0.00    2000/1643870     Individual::Individual(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [3]
+                0.00    0.00   18263/182610      std::vector<Individual, std::allocator<Individual> >::begin() [85]
+                0.00    0.00   18263/184610      std::vector<Individual, std::allocator<Individual> >::end() [84]
+                0.00    0.00 3484473/3484473     std::vector<Individual, std::allocator<Individual> >::operator[](unsigned long) [109]
+                0.00    0.00   18263/18263       std::vector<Individual, std::allocator<Individual> >::vector() [136]
+-----------------------------------------------
+                0.49    0.76 1641870/1641870     main [1]
+[2]     55.9    0.49    0.76 1641870         Individual::mate(Individual) [2]
+                0.03    0.56 1641870/1643870     Individual::Individual(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [3]
+                0.13    0.00 88660980/92931518     random_num(int, int) [13]
+                0.01    0.02 1641870/1643872     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [34]
+                0.01    0.00  878798/986798      mutated_genes() [49]
+-----------------------------------------------
+                0.00    0.00    2000/1643870     main [1]
+                0.03    0.56 1641870/1643870     Individual::mate(Individual) [2]
+[3]     26.6    0.03    0.56 1643870         Individual::Individual(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [3]
+                0.56    0.00 1643870/1643870     Individual::cal_fitness() [4]
+-----------------------------------------------
+                0.56    0.00 1643870/1643870     Individual::Individual(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [3]
+[4]     25.2    0.56    0.00 1643870         Individual::cal_fitness() [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]     15.2    0.34    0.00                 _init [5]
+-----------------------------------------------
+                0.00    0.29   18263/18263       main [1]
+[6]     12.8    0.00    0.29   18263         void std::sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [6]
+                0.00    0.29   18263/18263       void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+                0.00    0.00   18263/18263       __gnu_cxx::__ops::__iter_less_iter() [130]
+-----------------------------------------------
+                0.00    0.29   18263/18263       void std::sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [6]
+[7]     12.8    0.00    0.29   18263         void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+                0.00    0.18   18263/18263       void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter) [9]
+                0.01    0.10   18263/18263       void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [18]
+                0.00    0.00   18263/1881069     bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [38]
+                0.00    0.00   18263/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                0.00    0.00   18263/18263       std::__lg(long) [137]
+-----------------------------------------------
+                0.01    0.21 1824300/1824300     main [1]
+[8]      9.8    0.01    0.21 1824300         std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&) [8]
+                0.00    0.17  145944/145944      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+                0.00    0.03 1678356/1824300     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&) [26]
+                0.00    0.00  145944/184610      std::vector<Individual, std::allocator<Individual> >::end() [84]
+-----------------------------------------------
+                              156771             void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter) [9]
+                0.00    0.18   18263/18263       void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+[9]      8.1    0.00    0.18   18263+156771  void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter) [9]
+                0.00    0.18  156771/156771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+                0.00    0.00  331805/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                              156771             void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter) [9]
+-----------------------------------------------
+                0.00    0.18  156771/156771      void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter) [9]
+[10]     8.0    0.00    0.18  156771         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+                0.02    0.15  156771/156771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+                0.00    0.01  156771/156771      void std::__move_median_to_first<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [70]
+                0.00    0.00  470313/548565      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [82]
+                0.00    0.00  156771/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                0.00    0.00  156771/158771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator-(long) const [86]
+-----------------------------------------------
+                0.00    0.17  145944/145944      std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&) [8]
+[11]     7.8    0.00    0.17  145944         void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+                0.00    0.12  291888/292208      std::vector<Individual, std::allocator<Individual> >::_S_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&) [14]
+                0.01    0.01  145944/146104      std::_Vector_base<Individual, std::allocator<Individual> >::_M_allocate(unsigned long) [37]
+                0.00    0.01  145944/146104      std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [62]
+                0.01    0.00  291888/328714      std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() [56]
+                0.00    0.00  145944/1824300     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&) [26]
+                0.00    0.00  291888/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+                0.00    0.00  145944/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                0.00    0.00  145944/182610      std::vector<Individual, std::allocator<Individual> >::begin() [85]
+                0.00    0.00  145944/3794544     Individual const& std::forward<Individual const&>(std::remove_reference<Individual const&>::type&) [75]
+                0.00    0.00  145944/164367      std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long) [120]
+-----------------------------------------------
+                0.02    0.15  156771/156771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+[12]     7.5    0.02    0.15  156771         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+                0.03    0.03 6285434/7014758     bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [23]
+                0.01    0.03 2355285/2512056     void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [24]
+                0.02    0.01 2512056/2512056     bool __gnu_cxx::operator< <Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [30]
+                0.01    0.00 3322285/5814928     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator--() [44]
+                0.00    0.00 2806378/4614415     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator++() [108]
+-----------------------------------------------
+                0.00    0.00  986798/92931518     mutated_genes() [49]
+                0.00    0.00 3283740/92931518     main [1]
+                0.13    0.00 88660980/92931518     Individual::mate(Individual) [2]
+[13]     6.0    0.13    0.00 92931518         random_num(int, int) [13]
+-----------------------------------------------
+                0.00    0.00     320/292208      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.12  291888/292208      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+[14]     5.6    0.01    0.12  292208         std::vector<Individual, std::allocator<Individual> >::_S_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&) [14]
+                0.00    0.12  292208/292208      std::vector<Individual, std::allocator<Individual> >::_S_do_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&, std::integral_constant<bool, true>) [15]
+-----------------------------------------------
+                0.00    0.12  292208/292208      std::vector<Individual, std::allocator<Individual> >::_S_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&) [14]
+[15]     5.3    0.00    0.12  292208         std::vector<Individual, std::allocator<Individual> >::_S_do_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&, std::integral_constant<bool, true>) [15]
+                0.01    0.11  292208/292208      Individual* std::__relocate_a<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [16]
+-----------------------------------------------
+                0.01    0.11  292208/292208      std::vector<Individual, std::allocator<Individual> >::_S_do_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&, std::integral_constant<bool, true>) [15]
+[16]     5.3    0.01    0.11  292208         Individual* std::__relocate_a<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [16]
+                0.01    0.10  292208/292208      Individual* std::__relocate_a_1<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [17]
+                0.00    0.00  876624/876624      Individual* std::__niter_base<Individual*>(Individual*) [115]
+-----------------------------------------------
+                0.01    0.10  292208/292208      Individual* std::__relocate_a<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [16]
+[17]     4.9    0.01    0.10  292208         Individual* std::__relocate_a_1<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [17]
+                0.02    0.08 2319401/2319401     void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&) [19]
+                0.00    0.00 4638802/8784503     Individual* std::__addressof<Individual>(Individual&) [107]
+-----------------------------------------------
+                0.01    0.10   18263/18263       void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+[18]     4.7    0.01    0.10   18263         void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [18]
+                0.00    0.08   18263/18263       void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [20]
+                0.00    0.02   18263/18263       void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00   36526/548565      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [82]
+                0.00    0.00   18263/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+-----------------------------------------------
+                0.02    0.08 2319401/2319401     Individual* std::__relocate_a_1<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [17]
+[19]     4.4    0.02    0.08 2319401         void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&) [19]
+                0.02    0.05 2319401/2321401     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [22]
+                0.00    0.01 2319401/2319401     void std::allocator_traits<std::allocator<Individual> >::destroy<Individual>(std::allocator<Individual>&, Individual*) [72]
+                0.00    0.00 2319401/14170210     std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+                0.00    0.00 2319401/8784503     Individual* std::__addressof<Individual>(Individual&) [107]
+-----------------------------------------------
+                0.00    0.08   18263/18263       void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [18]
+[20]     3.7    0.00    0.08   18263         void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [20]
+                0.03    0.03 1534092/1805427     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.01    0.01 1552355/1881069     bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [38]
+                0.00    0.00 1534092/1805427     __gnu_cxx::__ops::__val_comp_iter(__gnu_cxx::__ops::_Iter_less_iter) [110]
+                0.00    0.00 1534092/4614415     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator++() [108]
+-----------------------------------------------
+                0.01    0.01  271335/1805427     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.03    0.03 1534092/1805427     void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [20]
+[21]     3.5    0.04    0.04 1805427         void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.00    0.01 2492643/2492643     bool __gnu_cxx::__ops::_Val_less_iter::operator()<Individual, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(Individual&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [69]
+                0.01    0.00 2492643/5814928     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator--() [44]
+                0.01    0.00 4985286/26538777     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+                0.01    0.00 1805427/6641494     Individual::Individual(Individual&&) [39]
+                0.00    0.00 1805427/15035274     Individual::~Individual() [28]
+                0.00    0.00 2492643/7528716     Individual::operator=(Individual&&) [68]
+                0.00    0.00 4298070/14170210     std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+-----------------------------------------------
+                0.00    0.00     160/2321401     void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00    1840/2321401     Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+                0.02    0.05 2319401/2321401     void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&) [19]
+[22]     3.2    0.03    0.05 2321401         void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [22]
+                0.02    0.02 2321401/2321401     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&) [25]
+                0.01    0.00 2321401/4644962     Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&) [45]
+-----------------------------------------------
+                0.00    0.00  273945/7014758     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00  455379/7014758     void std::__move_median_to_first<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [70]
+                0.03    0.03 6285434/7014758     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+[23]     3.1    0.04    0.03 7014758         bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [23]
+                0.02    0.00 7014758/9507401     operator<(Individual const&, Individual const&) [36]
+                0.02    0.00 14029516/26538777     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+-----------------------------------------------
+                0.00    0.00  156771/2512056     void std::__move_median_to_first<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [70]
+                0.01    0.03 2355285/2512056     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+[24]     2.1    0.01    0.03 2512056         void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [24]
+                0.00    0.03 2512056/2512056     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&) [35]
+                0.01    0.00 5024112/26538777     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+-----------------------------------------------
+                0.02    0.02 2321401/2321401     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [22]
+[25]     1.8    0.02    0.02 2321401         void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&) [25]
+                0.01    0.00 2321401/4644962     Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&) [45]
+                0.01    0.00 2321401/6641494     Individual::Individual(Individual&&) [39]
+                0.01    0.00 2321401/4145701     operator new(unsigned long, void*) [54]
+-----------------------------------------------
+                0.00    0.00  145944/1824300     void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+                0.00    0.03 1678356/1824300     std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&) [8]
+[26]     1.7    0.00    0.04 1824300         void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&) [26]
+                0.02    0.01 1824300/1824300     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&) [29]
+                0.00    0.00 1824300/3794544     Individual const& std::forward<Individual const&>(std::remove_reference<Individual const&>::type&) [75]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     1.6    0.04    0.00                 frame_dummy [27]
+-----------------------------------------------
+                0.00    0.00    2610/15035274     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00 1805427/15035274     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.00    0.00 1826300/15035274     void std::_Destroy<Individual>(Individual*) [79]
+                0.01    0.00 2319401/15035274     void __gnu_cxx::new_allocator<Individual>::destroy<Individual>(Individual*) [71]
+                0.01    0.00 2512056/15035274     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&) [35]
+                0.02    0.00 6569480/15035274     main [1]
+[28]     1.6    0.04    0.00 15035274         Individual::~Individual() [28]
+-----------------------------------------------
+                0.02    0.01 1824300/1824300     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&) [26]
+[29]     1.6    0.02    0.01 1824300         void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&) [29]
+                0.01    0.00 1824300/6749910     Individual::Individual(Individual const&) [33]
+                0.00    0.00 1824300/4145701     operator new(unsigned long, void*) [54]
+                0.00    0.00 1824300/3794544     Individual const& std::forward<Individual const&>(std::remove_reference<Individual const&>::type&) [75]
+-----------------------------------------------
+                0.02    0.01 2512056/2512056     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+[30]     1.5    0.02    0.01 2512056         bool __gnu_cxx::operator< <Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [30]
+                0.01    0.00 5024112/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+-----------------------------------------------
+                0.00    0.00    2000/26538777     std::vector<Individual, std::allocator<Individual> >::back() [96]
+                0.00    0.00    5220/26538777     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00 2492643/26538777     bool __gnu_cxx::__ops::_Val_less_iter::operator()<Individual, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(Individual&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [69]
+                0.01    0.00 4985286/26538777     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.01    0.00 5024112/26538777     void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [24]
+                0.02    0.00 14029516/26538777     bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [23]
+[31]     1.3    0.03    0.00 26538777         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+-----------------------------------------------
+                0.00    0.00     320/10504322     void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00   36526/10504322     bool __gnu_cxx::operator==<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [93]
+                0.00    0.00   46926/10504322     Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [92]
+                0.00    0.00  291888/10504322     void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+                0.00    0.00 1342412/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                0.01    0.00 3762138/10504322     bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [38]
+                0.01    0.00 5024112/10504322     bool __gnu_cxx::operator< <Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [30]
+[32]     1.3    0.03    0.00 10504322         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+-----------------------------------------------
+                0.01    0.00 1824300/6749910     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&) [29]
+                0.02    0.00 4925610/6749910     main [1]
+[33]     1.3    0.03    0.00 6749910         Individual::Individual(Individual const&) [33]
+-----------------------------------------------
+                0.00    0.00       2/1643872     __static_initialization_and_destruction_0(int, int) [100]
+                0.00    0.00    2000/1643872     create_gnome[abi:cxx11]() [83]
+                0.01    0.02 1641870/1643872     Individual::mate(Individual) [2]
+[34]     1.3    0.01    0.02 1643872         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [34]
+                0.00    0.02 1643872/1643872     void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [41]
+                0.00    0.00 1643872/1643872     std::char_traits<char>::length(char const*) [111]
+-----------------------------------------------
+                0.00    0.03 2512056/2512056     void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [24]
+[35]     1.1    0.00    0.03 2512056         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&) [35]
+                0.01    0.00 2512056/6641494     Individual::Individual(Individual&&) [39]
+                0.01    0.00 5024112/7528716     Individual::operator=(Individual&&) [68]
+                0.01    0.00 2512056/15035274     Individual::~Individual() [28]
+                0.01    0.00 7536168/14170210     std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+-----------------------------------------------
+                0.01    0.00 2492643/9507401     bool __gnu_cxx::__ops::_Val_less_iter::operator()<Individual, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(Individual&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [69]
+                0.02    0.00 7014758/9507401     bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [23]
+[36]     1.1    0.03    0.00 9507401         operator<(Individual const&, Individual const&) [36]
+-----------------------------------------------
+                0.00    0.00     160/146104      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.01    0.01  145944/146104      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+[37]     1.1    0.01    0.01  146104         std::_Vector_base<Individual, std::allocator<Individual> >::_M_allocate(unsigned long) [37]
+                0.00    0.01  146104/146104      std::allocator_traits<std::allocator<Individual> >::allocate(std::allocator<Individual>&, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00   18243/1881069     void std::_Destroy_aux<false>::__destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [87]
+                0.00    0.00   18263/1881069     void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+                0.00    0.00  292208/1881069     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.01    0.01 1552355/1881069     void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [20]
+[38]     0.9    0.01    0.01 1881069         bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [38]
+                0.01    0.00 3762138/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+-----------------------------------------------
+                0.00    0.00    2610/6641494     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.01    0.00 1805427/6641494     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.01    0.00 2321401/6641494     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&) [25]
+                0.01    0.00 2512056/6641494     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&) [35]
+[39]     0.9    0.02    0.00 6641494         Individual::Individual(Individual&&) [39]
+-----------------------------------------------
+                0.02    0.00 1643872/1643872     void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [41]
+[40]     0.9    0.02    0.00 1643872         bool __gnu_cxx::__is_null_pointer<char const>(char const*) [40]
+-----------------------------------------------
+                0.00    0.02 1643872/1643872     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [34]
+[41]     0.9    0.00    0.02 1643872         void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [41]
+                0.02    0.00 1643872/1643872     bool __gnu_cxx::__is_null_pointer<char const>(char const*) [40]
+                0.00    0.00 1643872/1643872     std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [114]
+-----------------------------------------------
+                0.00    0.02   18263/18263       main [1]
+[42]     0.9    0.00    0.02   18263         std::vector<Individual, std::allocator<Individual> >::~vector() [42]
+                0.00    0.01   18263/18263       void std::_Destroy<Individual*, Individual>(Individual*, Individual*, std::allocator<Individual>&) [48]
+                0.00    0.01   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::~_Vector_base() [77]
+                0.00    0.00   18263/328714      std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() [56]
+-----------------------------------------------
+                0.00    0.02   18263/18263       void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [18]
+[43]     0.8    0.00    0.02   18263         void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.01    0.01  271335/1805427     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.00    0.00  292208/1881069     bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [38]
+                0.00    0.00  273945/7014758     bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [23]
+                0.00    0.00   18263/18263       bool __gnu_cxx::operator==<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [93]
+                0.00    0.00   20873/548565      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [82]
+                0.00    0.00    2610/2610        __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::move_backward<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [94]
+                0.00    0.00    2610/6641494     Individual::Individual(Individual&&) [39]
+                0.00    0.00    2610/15035274     Individual::~Individual() [28]
+                0.00    0.00    5220/26538777     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+                0.00    0.00    5220/14170210     std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+                0.00    0.00    2610/7528716     Individual::operator=(Individual&&) [68]
+                0.00    0.00  273945/4614415     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator++() [108]
+                0.00    0.00  271335/1805427     __gnu_cxx::__ops::__val_comp_iter(__gnu_cxx::__ops::_Iter_less_iter) [110]
+-----------------------------------------------
+                0.01    0.00 2492643/5814928     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.01    0.00 3322285/5814928     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+[44]     0.7    0.01    0.00 5814928         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator--() [44]
+-----------------------------------------------
+                0.00    0.00     160/4644962     void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00    2000/4644962     Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+                0.01    0.00 2321401/4644962     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [22]
+                0.01    0.00 2321401/4644962     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&) [25]
+[45]     0.7    0.01    0.00 4644962         Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&) [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[46]     0.7    0.01    0.00                 void std::__sort_heap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter&) [46]
+-----------------------------------------------
+                0.01    0.00   18263/18263       void std::_Destroy<Individual*, Individual>(Individual*, Individual*, std::allocator<Individual>&) [48]
+[47]     0.6    0.01    0.00   18263         void std::_Destroy<Individual*>(Individual*, Individual*) [47]
+                0.00    0.00   18263/18263       void std::_Destroy_aux<false>::__destroy<Individual*>(Individual*, Individual*) [80]
+-----------------------------------------------
+                0.00    0.01   18263/18263       std::vector<Individual, std::allocator<Individual> >::~vector() [42]
+[48]     0.6    0.00    0.01   18263         void std::_Destroy<Individual*, Individual>(Individual*, Individual*, std::allocator<Individual>&) [48]
+                0.01    0.00   18263/18263       void std::_Destroy<Individual*>(Individual*, Individual*) [47]
+-----------------------------------------------
+                0.00    0.00  108000/986798      create_gnome[abi:cxx11]() [83]
+                0.01    0.00  878798/986798      Individual::mate(Individual) [2]
+[49]     0.5    0.01    0.00  986798         mutated_genes() [49]
+                0.00    0.00  986798/92931518     random_num(int, int) [13]
+-----------------------------------------------
+                0.00    0.01   18243/18243       main [1]
+[50]     0.5    0.00    0.01   18243         std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+                0.00    0.01   18243/18243       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::copy<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [52]
+                0.00    0.00   18243/328714      std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() [56]
+                0.00    0.00   18243/18243       void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, std::allocator<Individual>&) [89]
+                0.00    0.00   18243/184610      std::vector<Individual, std::allocator<Individual> >::end() [84]
+                0.00    0.00   18243/182610      std::vector<Individual, std::allocator<Individual> >::begin() [85]
+                0.00    0.00   36486/620902      std::vector<Individual, std::allocator<Individual> >::size() const [116]
+                0.00    0.00   18243/18243       __gnu_cxx::__alloc_traits<std::allocator<Individual>, Individual>::_S_propagate_on_copy_assign() [138]
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::capacity() const [141]
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::end() const [139]
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::begin() const [140]
+-----------------------------------------------
+                0.00    0.01   18243/18243       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::copy<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [52]
+[51]     0.5    0.00    0.01   18243         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [51]
+                0.00    0.01   18243/18243       Individual* std::__copy_move_a1<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [65]
+                0.00    0.00   18243/20853       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*) [91]
+                0.00    0.00   18243/46926       Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [92]
+                0.00    0.00   36486/36486       Individual const* std::__niter_base<Individual const*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >) [127]
+-----------------------------------------------
+                0.00    0.01   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+[52]     0.5    0.00    0.01   18243         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::copy<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [52]
+                0.00    0.01   18243/18243       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [51]
+                0.00    0.00   36486/36486       __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >) [126]
+-----------------------------------------------
+                0.00    0.00    2000/14170210     std::vector<Individual, std::allocator<Individual> >::push_back(Individual&&) [73]
+                0.00    0.00    5220/14170210     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00    9351/14170210     Individual* std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<Individual*, Individual*>(Individual*, Individual*, Individual*) [97]
+                0.00    0.00 2319401/14170210     void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&) [19]
+                0.00    0.00 4298070/14170210     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.01    0.00 7536168/14170210     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&) [35]
+[53]     0.4    0.01    0.00 14170210         std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+-----------------------------------------------
+                0.00    0.00 1824300/4145701     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&) [29]
+                0.01    0.00 2321401/4145701     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&) [25]
+[54]     0.4    0.01    0.00 4145701         operator new(unsigned long, void*) [54]
+-----------------------------------------------
+                0.01    0.00 1824300/1824300     Individual* std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m<Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [64]
+[55]     0.4    0.01    0.00 1824300         Individual::operator=(Individual const&) [55]
+-----------------------------------------------
+                0.00    0.00     320/328714      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00   18243/328714      std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+                0.00    0.00   18263/328714      std::vector<Individual, std::allocator<Individual> >::~vector() [42]
+                0.01    0.00  291888/328714      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+[56]     0.4    0.01    0.00  328714         std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() [56]
+-----------------------------------------------
+                0.01    0.00  292208/292208      std::allocator_traits<std::allocator<Individual> >::max_size(std::allocator<Individual> const&) [59]
+[57]     0.4    0.01    0.00  292208         __gnu_cxx::new_allocator<Individual>::max_size() const [57]
+                0.00    0.00  292208/438312      __gnu_cxx::new_allocator<Individual>::_M_max_size() const [117]
+-----------------------------------------------
+                0.00    0.01  292208/292208      std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [62]
+[58]     0.4    0.00    0.01  292208         std::vector<Individual, std::allocator<Individual> >::max_size() const [58]
+                0.00    0.01  292208/292208      std::vector<Individual, std::allocator<Individual> >::_S_max_size(std::allocator<Individual> const&) [60]
+                0.00    0.00  292208/292208      std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() const [118]
+-----------------------------------------------
+                0.00    0.01  292208/292208      std::vector<Individual, std::allocator<Individual> >::_S_max_size(std::allocator<Individual> const&) [60]
+[59]     0.4    0.00    0.01  292208         std::allocator_traits<std::allocator<Individual> >::max_size(std::allocator<Individual> const&) [59]
+                0.01    0.00  292208/292208      __gnu_cxx::new_allocator<Individual>::max_size() const [57]
+-----------------------------------------------
+                0.00    0.01  292208/292208      std::vector<Individual, std::allocator<Individual> >::max_size() const [58]
+[60]     0.4    0.00    0.01  292208         std::vector<Individual, std::allocator<Individual> >::_S_max_size(std::allocator<Individual> const&) [60]
+                0.00    0.01  292208/292208      std::allocator_traits<std::allocator<Individual> >::max_size(std::allocator<Individual> const&) [59]
+                0.00    0.00  292208/292208      unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [119]
+-----------------------------------------------
+                0.01    0.00  146104/146104      std::allocator_traits<std::allocator<Individual> >::allocate(std::allocator<Individual>&, unsigned long) [63]
+[61]     0.4    0.01    0.00  146104         __gnu_cxx::new_allocator<Individual>::allocate(unsigned long, void const*) [61]
+                0.00    0.00  146104/438312      __gnu_cxx::new_allocator<Individual>::_M_max_size() const [117]
+-----------------------------------------------
+                0.00    0.00     160/146104      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.01  145944/146104      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+[62]     0.4    0.00    0.01  146104         std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [62]
+                0.00    0.01  292208/292208      std::vector<Individual, std::allocator<Individual> >::max_size() const [58]
+                0.00    0.00  584416/620902      std::vector<Individual, std::allocator<Individual> >::size() const [116]
+                0.00    0.00  146104/146104      unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [123]
+-----------------------------------------------
+                0.00    0.01  146104/146104      std::_Vector_base<Individual, std::allocator<Individual> >::_M_allocate(unsigned long) [37]
+[63]     0.4    0.00    0.01  146104         std::allocator_traits<std::allocator<Individual> >::allocate(std::allocator<Individual>&, unsigned long) [63]
+                0.01    0.00  146104/146104      __gnu_cxx::new_allocator<Individual>::allocate(unsigned long, void const*) [61]
+-----------------------------------------------
+                0.00    0.01   18243/18243       Individual* std::__copy_move_a2<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [66]
+[64]     0.4    0.00    0.01   18243         Individual* std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m<Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [64]
+                0.01    0.00 1824300/1824300     Individual::operator=(Individual const&) [55]
+-----------------------------------------------
+                0.00    0.01   18243/18243       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [51]
+[65]     0.4    0.00    0.01   18243         Individual* std::__copy_move_a1<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [65]
+                0.00    0.01   18243/18243       Individual* std::__copy_move_a2<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [66]
+-----------------------------------------------
+                0.00    0.01   18243/18243       Individual* std::__copy_move_a1<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [65]
+[66]     0.4    0.00    0.01   18243         Individual* std::__copy_move_a2<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [66]
+                0.00    0.01   18243/18243       Individual* std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m<Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [64]
+-----------------------------------------------
+                                                 <spontaneous>
+[67]     0.4    0.01    0.00                 void std::__heap_select<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [67]
+-----------------------------------------------
+                0.00    0.00    2610/7528716     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00    9351/7528716     Individual* std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<Individual*, Individual*>(Individual*, Individual*, Individual*) [97]
+                0.00    0.00 2492643/7528716     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+                0.01    0.00 5024112/7528716     std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&) [35]
+[68]     0.4    0.01    0.00 7528716         Individual::operator=(Individual&&) [68]
+-----------------------------------------------
+                0.00    0.01 2492643/2492643     void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter) [21]
+[69]     0.4    0.00    0.01 2492643         bool __gnu_cxx::__ops::_Val_less_iter::operator()<Individual, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(Individual&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [69]
+                0.01    0.00 2492643/9507401     operator<(Individual const&, Individual const&) [36]
+                0.00    0.00 2492643/26538777     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+-----------------------------------------------
+                0.00    0.01  156771/156771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+[70]     0.3    0.00    0.01  156771         void std::__move_median_to_first<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [70]
+                0.00    0.00  455379/7014758     bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [23]
+                0.00    0.00  156771/2512056     void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [24]
+-----------------------------------------------
+                0.00    0.01 2319401/2319401     void std::allocator_traits<std::allocator<Individual> >::destroy<Individual>(std::allocator<Individual>&, Individual*) [72]
+[71]     0.2    0.00    0.01 2319401         void __gnu_cxx::new_allocator<Individual>::destroy<Individual>(Individual*) [71]
+                0.01    0.00 2319401/15035274     Individual::~Individual() [28]
+-----------------------------------------------
+                0.00    0.01 2319401/2319401     void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&) [19]
+[72]     0.2    0.00    0.01 2319401         void std::allocator_traits<std::allocator<Individual> >::destroy<Individual>(std::allocator<Individual>&, Individual*) [72]
+                0.00    0.01 2319401/2319401     void __gnu_cxx::new_allocator<Individual>::destroy<Individual>(Individual*) [71]
+-----------------------------------------------
+                0.00    0.01    2000/2000        main [1]
+[73]     0.2    0.00    0.01    2000         std::vector<Individual, std::allocator<Individual> >::push_back(Individual&&) [73]
+                0.01    0.00    2000/2000        Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+                0.00    0.00    2000/14170210     std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+-----------------------------------------------
+                0.01    0.00    2000/2000        std::vector<Individual, std::allocator<Individual> >::push_back(Individual&&) [73]
+[74]     0.2    0.01    0.00    2000         Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+                0.00    0.00     160/160         void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00    1840/2321401     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [22]
+                0.00    0.00    2000/2000        std::vector<Individual, std::allocator<Individual> >::back() [96]
+                0.00    0.00    2000/4644962     Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&) [45]
+                0.00    0.00     160/184610      std::vector<Individual, std::allocator<Individual> >::end() [84]
+-----------------------------------------------
+                0.00    0.00  145944/3794544     void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+                0.00    0.00 1824300/3794544     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&) [26]
+                0.00    0.00 1824300/3794544     void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&) [29]
+[75]     0.2    0.01    0.00 3794544         Individual const& std::forward<Individual const&>(std::remove_reference<Individual const&>::type&) [75]
+-----------------------------------------------
+                0.01    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::~_Vector_base() [77]
+[76]     0.2    0.01    0.00   18263         std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::~_Vector_impl() [76]
+                0.00    0.00   18263/18263       std::allocator<Individual>::~allocator() [132]
+-----------------------------------------------
+                0.00    0.01   18263/18263       std::vector<Individual, std::allocator<Individual> >::~vector() [42]
+[77]     0.2    0.00    0.01   18263         std::_Vector_base<Individual, std::allocator<Individual> >::~_Vector_base() [77]
+                0.01    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::~_Vector_impl() [76]
+                0.00    0.00   18263/164367      std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long) [120]
+-----------------------------------------------
+                0.00    0.00  158771/1074556     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator-(long) const [86]
+                0.00    0.00  182610/1074556     std::vector<Individual, std::allocator<Individual> >::begin() [85]
+                0.00    0.00  184610/1074556     std::vector<Individual, std::allocator<Individual> >::end() [84]
+                0.00    0.00  548565/1074556     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [82]
+[78]     0.2    0.00    0.00 1074556         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&) [78]
+-----------------------------------------------
+                0.00    0.00 1826300/1826300     void std::_Destroy_aux<false>::__destroy<Individual*>(Individual*, Individual*) [80]
+[79]     0.2    0.00    0.00 1826300         void std::_Destroy<Individual>(Individual*) [79]
+                0.00    0.00 1826300/15035274     Individual::~Individual() [28]
+-----------------------------------------------
+                0.00    0.00   18263/18263       void std::_Destroy<Individual*>(Individual*, Individual*) [47]
+[80]     0.2    0.00    0.00   18263         void std::_Destroy_aux<false>::__destroy<Individual*>(Individual*, Individual*) [80]
+                0.00    0.00 1826300/1826300     void std::_Destroy<Individual>(Individual*) [79]
+                0.00    0.00 1826300/8784503     Individual* std::__addressof<Individual>(Individual&) [107]
+-----------------------------------------------
+                0.00    0.00     160/671206      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00   18263/671206      void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+                0.00    0.00   18263/671206      void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [18]
+                0.00    0.00  145944/671206      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+                0.00    0.00  156771/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+                0.00    0.00  331805/671206      void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter) [9]
+[81]     0.2    0.00    0.00  671206         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                0.00    0.00 1342412/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+-----------------------------------------------
+                0.00    0.00   20853/548565      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*) [91]
+                0.00    0.00   20873/548565      void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00   36526/548565      void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [18]
+                0.00    0.00  470313/548565      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+[82]     0.1    0.00    0.00  548565         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [82]
+                0.00    0.00  548565/1074556     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&) [78]
+-----------------------------------------------
+                0.00    0.00    2000/2000        main [1]
+[83]     0.1    0.00    0.00    2000         create_gnome[abi:cxx11]() [83]
+                0.00    0.00  108000/986798      mutated_genes() [49]
+                0.00    0.00    2000/1643872     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [34]
+-----------------------------------------------
+                0.00    0.00     160/184610      Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+                0.00    0.00    2000/184610      std::vector<Individual, std::allocator<Individual> >::back() [96]
+                0.00    0.00   18243/184610      std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+                0.00    0.00   18263/184610      main [1]
+                0.00    0.00  145944/184610      std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&) [8]
+[84]     0.0    0.00    0.00  184610         std::vector<Individual, std::allocator<Individual> >::end() [84]
+                0.00    0.00  184610/1074556     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&) [78]
+-----------------------------------------------
+                0.00    0.00     160/182610      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00   18243/182610      std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+                0.00    0.00   18263/182610      main [1]
+                0.00    0.00  145944/182610      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+[85]     0.0    0.00    0.00  182610         std::vector<Individual, std::allocator<Individual> >::begin() [85]
+                0.00    0.00  182610/1074556     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&) [78]
+-----------------------------------------------
+                0.00    0.00    2000/158771      std::vector<Individual, std::allocator<Individual> >::back() [96]
+                0.00    0.00  156771/158771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [10]
+[86]     0.0    0.00    0.00  158771         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator-(long) const [86]
+                0.00    0.00  158771/1074556     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&) [78]
+-----------------------------------------------
+                0.00    0.00   18243/18243       void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [88]
+[87]     0.0    0.00    0.00   18243         void std::_Destroy_aux<false>::__destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [87]
+                0.00    0.00   18243/1881069     bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [38]
+-----------------------------------------------
+                0.00    0.00   18243/18243       void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, std::allocator<Individual>&) [89]
+[88]     0.0    0.00    0.00   18243         void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [88]
+                0.00    0.00   18243/18243       void std::_Destroy_aux<false>::__destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [87]
+-----------------------------------------------
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+[89]     0.0    0.00    0.00   18243         void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, std::allocator<Individual>&) [89]
+                0.00    0.00   18243/18243       void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [88]
+-----------------------------------------------
+                0.00    0.00     160/160         Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+[90]     0.0    0.00    0.00     160         void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00     320/292208      std::vector<Individual, std::allocator<Individual> >::_S_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&) [14]
+                0.00    0.00     160/146104      std::_Vector_base<Individual, std::allocator<Individual> >::_M_allocate(unsigned long) [37]
+                0.00    0.00     160/146104      std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [62]
+                0.00    0.00     320/328714      std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() [56]
+                0.00    0.00     160/2321401     void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [22]
+                0.00    0.00     320/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+                0.00    0.00     160/671206      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [81]
+                0.00    0.00     160/182610      std::vector<Individual, std::allocator<Individual> >::begin() [85]
+                0.00    0.00     160/4644962     Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&) [45]
+                0.00    0.00     160/164367      std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long) [120]
+-----------------------------------------------
+                0.00    0.00    2610/20853       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [95]
+                0.00    0.00   18243/20853       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [51]
+[91]     0.0    0.00    0.00   20853         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*) [91]
+                0.00    0.00   20853/548565      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [82]
+                0.00    0.00   20853/46926       Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [92]
+-----------------------------------------------
+                0.00    0.00    7830/46926       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [95]
+                0.00    0.00   18243/46926       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [51]
+                0.00    0.00   20853/46926       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*) [91]
+[92]     0.0    0.00    0.00   46926         Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [92]
+                0.00    0.00   46926/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+-----------------------------------------------
+                0.00    0.00   18263/18263       void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+[93]     0.0    0.00    0.00   18263         bool __gnu_cxx::operator==<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [93]
+                0.00    0.00   36526/10504322     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [32]
+-----------------------------------------------
+                0.00    0.00    2610/2610        void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+[94]     0.0    0.00    0.00    2610         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::move_backward<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [94]
+                0.00    0.00    2610/2610        __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [95]
+                0.00    0.00    5220/5220        __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [142]
+-----------------------------------------------
+                0.00    0.00    2610/2610        __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::move_backward<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [94]
+[95]     0.0    0.00    0.00    2610         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [95]
+                0.00    0.00    7830/46926       Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [92]
+                0.00    0.00    2610/20853       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*) [91]
+                0.00    0.00    2610/2610        Individual* std::__copy_move_backward_a1<true, Individual*, Individual*>(Individual*, Individual*, Individual*) [98]
+-----------------------------------------------
+                0.00    0.00    2000/2000        Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [74]
+[96]     0.0    0.00    0.00    2000         std::vector<Individual, std::allocator<Individual> >::back() [96]
+                0.00    0.00    2000/184610      std::vector<Individual, std::allocator<Individual> >::end() [84]
+                0.00    0.00    2000/158771      __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator-(long) const [86]
+                0.00    0.00    2000/26538777     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [31]
+-----------------------------------------------
+                0.00    0.00    2610/2610        Individual* std::__copy_move_backward_a2<true, Individual*, Individual*>(Individual*, Individual*, Individual*) [99]
+[97]     0.0    0.00    0.00    2610         Individual* std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<Individual*, Individual*>(Individual*, Individual*, Individual*) [97]
+                0.00    0.00    9351/7528716     Individual::operator=(Individual&&) [68]
+                0.00    0.00    9351/14170210     std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&) [53]
+-----------------------------------------------
+                0.00    0.00    2610/2610        __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [95]
+[98]     0.0    0.00    0.00    2610         Individual* std::__copy_move_backward_a1<true, Individual*, Individual*>(Individual*, Individual*, Individual*) [98]
+                0.00    0.00    2610/2610        Individual* std::__copy_move_backward_a2<true, Individual*, Individual*>(Individual*, Individual*, Individual*) [99]
+-----------------------------------------------
+                0.00    0.00    2610/2610        Individual* std::__copy_move_backward_a1<true, Individual*, Individual*>(Individual*, Individual*, Individual*) [98]
+[99]     0.0    0.00    0.00    2610         Individual* std::__copy_move_backward_a2<true, Individual*, Individual*>(Individual*, Individual*, Individual*) [99]
+                0.00    0.00    2610/2610        Individual* std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<Individual*, Individual*>(Individual*, Individual*, Individual*) [97]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z10random_numii [101]
+[100]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [100]
+                0.00    0.00       2/1643872     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[101]    0.0    0.00    0.00                 _GLOBAL__sub_I__Z10random_numii [101]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [100]
+-----------------------------------------------
+                0.00    0.00 1826300/8784503     void std::_Destroy_aux<false>::__destroy<Individual*>(Individual*, Individual*) [80]
+                0.00    0.00 2319401/8784503     void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&) [19]
+                0.00    0.00 4638802/8784503     Individual* std::__relocate_a_1<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [17]
+[107]    0.0    0.00    0.00 8784503         Individual* std::__addressof<Individual>(Individual&) [107]
+-----------------------------------------------
+                0.00    0.00  273945/4614415     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00 1534092/4614415     void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [20]
+                0.00    0.00 2806378/4614415     __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [12]
+[108]    0.0    0.00    0.00 4614415         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator++() [108]
+-----------------------------------------------
+                0.00    0.00 3484473/3484473     main [1]
+[109]    0.0    0.00    0.00 3484473         std::vector<Individual, std::allocator<Individual> >::operator[](unsigned long) [109]
+-----------------------------------------------
+                0.00    0.00  271335/1805427     void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [43]
+                0.00    0.00 1534092/1805427     void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [20]
+[110]    0.0    0.00    0.00 1805427         __gnu_cxx::__ops::__val_comp_iter(__gnu_cxx::__ops::_Iter_less_iter) [110]
+-----------------------------------------------
+                0.00    0.00 1643872/1643872     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [34]
+[111]    0.0    0.00    0.00 1643872         std::char_traits<char>::length(char const*) [111]
+-----------------------------------------------
+                0.00    0.00 1643872/1643872     std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [114]
+[112]    0.0    0.00    0.00 1643872         std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag) [112]
+-----------------------------------------------
+                0.00    0.00 1643872/1643872     std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [114]
+[113]    0.0    0.00    0.00 1643872         std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&) [113]
+-----------------------------------------------
+                0.00    0.00 1643872/1643872     void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [41]
+[114]    0.0    0.00    0.00 1643872         std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*) [114]
+                0.00    0.00 1643872/1643872     std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&) [113]
+                0.00    0.00 1643872/1643872     std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag) [112]
+-----------------------------------------------
+                0.00    0.00  876624/876624      Individual* std::__relocate_a<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&) [16]
+[115]    0.0    0.00    0.00  876624         Individual* std::__niter_base<Individual*>(Individual*) [115]
+-----------------------------------------------
+                0.00    0.00   36486/620902      std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+                0.00    0.00  584416/620902      std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [62]
+[116]    0.0    0.00    0.00  620902         std::vector<Individual, std::allocator<Individual> >::size() const [116]
+-----------------------------------------------
+                0.00    0.00  146104/438312      __gnu_cxx::new_allocator<Individual>::allocate(unsigned long, void const*) [61]
+                0.00    0.00  292208/438312      __gnu_cxx::new_allocator<Individual>::max_size() const [57]
+[117]    0.0    0.00    0.00  438312         __gnu_cxx::new_allocator<Individual>::_M_max_size() const [117]
+-----------------------------------------------
+                0.00    0.00  292208/292208      std::vector<Individual, std::allocator<Individual> >::max_size() const [58]
+[118]    0.0    0.00    0.00  292208         std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() const [118]
+-----------------------------------------------
+                0.00    0.00  292208/292208      std::vector<Individual, std::allocator<Individual> >::_S_max_size(std::allocator<Individual> const&) [60]
+[119]    0.0    0.00    0.00  292208         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [119]
+-----------------------------------------------
+                0.00    0.00     160/164367      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [90]
+                0.00    0.00   18263/164367      std::_Vector_base<Individual, std::allocator<Individual> >::~_Vector_base() [77]
+                0.00    0.00  145944/164367      void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [11]
+[120]    0.0    0.00    0.00  164367         std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long) [120]
+                0.00    0.00  146104/146104      std::allocator_traits<std::allocator<Individual> >::deallocate(std::allocator<Individual>&, Individual*, unsigned long) [122]
+-----------------------------------------------
+                0.00    0.00  146104/146104      std::allocator_traits<std::allocator<Individual> >::deallocate(std::allocator<Individual>&, Individual*, unsigned long) [122]
+[121]    0.0    0.00    0.00  146104         __gnu_cxx::new_allocator<Individual>::deallocate(Individual*, unsigned long) [121]
+-----------------------------------------------
+                0.00    0.00  146104/146104      std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long) [120]
+[122]    0.0    0.00    0.00  146104         std::allocator_traits<std::allocator<Individual> >::deallocate(std::allocator<Individual>&, Individual*, unsigned long) [122]
+                0.00    0.00  146104/146104      __gnu_cxx::new_allocator<Individual>::deallocate(Individual*, unsigned long) [121]
+-----------------------------------------------
+                0.00    0.00  146104/146104      std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [62]
+[123]    0.0    0.00    0.00  146104         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [123]
+-----------------------------------------------
+                0.00    0.00   18243/36486       std::vector<Individual, std::allocator<Individual> >::begin() const [140]
+                0.00    0.00   18243/36486       std::vector<Individual, std::allocator<Individual> >::end() const [139]
+[124]    0.0    0.00    0.00   36486         __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual const* const&) [124]
+-----------------------------------------------
+                0.00    0.00   36486/36486       Individual const* std::__niter_base<Individual const*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >) [127]
+[125]    0.0    0.00    0.00   36486         __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::base() const [125]
+-----------------------------------------------
+                0.00    0.00   36486/36486       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::copy<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [52]
+[126]    0.0    0.00    0.00   36486         __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >) [126]
+-----------------------------------------------
+                0.00    0.00   36486/36486       __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [51]
+[127]    0.0    0.00    0.00   36486         Individual const* std::__niter_base<Individual const*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >) [127]
+                0.00    0.00   36486/36486       __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::base() const [125]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::allocator<Individual>::allocator() [131]
+[128]    0.0    0.00    0.00   18263         __gnu_cxx::new_allocator<Individual>::new_allocator() [128]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::allocator<Individual>::~allocator() [132]
+[129]    0.0    0.00    0.00   18263         __gnu_cxx::new_allocator<Individual>::~new_allocator() [129]
+-----------------------------------------------
+                0.00    0.00   18263/18263       void std::sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [6]
+[130]    0.0    0.00    0.00   18263         __gnu_cxx::__ops::__iter_less_iter() [130]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::_Vector_impl() [133]
+[131]    0.0    0.00    0.00   18263         std::allocator<Individual>::allocator() [131]
+                0.00    0.00   18263/18263       __gnu_cxx::new_allocator<Individual>::new_allocator() [128]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::~_Vector_impl() [76]
+[132]    0.0    0.00    0.00   18263         std::allocator<Individual>::~allocator() [132]
+                0.00    0.00   18263/18263       __gnu_cxx::new_allocator<Individual>::~new_allocator() [129]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_base() [135]
+[133]    0.0    0.00    0.00   18263         std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::_Vector_impl() [133]
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl_data::_Vector_impl_data() [134]
+                0.00    0.00   18263/18263       std::allocator<Individual>::allocator() [131]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::_Vector_impl() [133]
+[134]    0.0    0.00    0.00   18263         std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl_data::_Vector_impl_data() [134]
+-----------------------------------------------
+                0.00    0.00   18263/18263       std::vector<Individual, std::allocator<Individual> >::vector() [136]
+[135]    0.0    0.00    0.00   18263         std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_base() [135]
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::_Vector_impl() [133]
+-----------------------------------------------
+                0.00    0.00   18263/18263       main [1]
+[136]    0.0    0.00    0.00   18263         std::vector<Individual, std::allocator<Individual> >::vector() [136]
+                0.00    0.00   18263/18263       std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_base() [135]
+-----------------------------------------------
+                0.00    0.00   18263/18263       void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter) [7]
+[137]    0.0    0.00    0.00   18263         std::__lg(long) [137]
+-----------------------------------------------
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+[138]    0.0    0.00    0.00   18243         __gnu_cxx::__alloc_traits<std::allocator<Individual>, Individual>::_S_propagate_on_copy_assign() [138]
+-----------------------------------------------
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+[139]    0.0    0.00    0.00   18243         std::vector<Individual, std::allocator<Individual> >::end() const [139]
+                0.00    0.00   18243/36486       __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual const* const&) [124]
+-----------------------------------------------
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+[140]    0.0    0.00    0.00   18243         std::vector<Individual, std::allocator<Individual> >::begin() const [140]
+                0.00    0.00   18243/36486       __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual const* const&) [124]
+-----------------------------------------------
+                0.00    0.00   18243/18243       std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [50]
+[141]    0.0    0.00    0.00   18243         std::vector<Individual, std::allocator<Individual> >::capacity() const [141]
+-----------------------------------------------
+                0.00    0.00    5220/5220        __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::move_backward<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [94]
+[142]    0.0    0.00    0.00    5220         __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [142]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [13] random_num(int, int)  [141] std::vector<Individual, std::allocator<Individual> >::capacity() const [115] Individual* std::__niter_base<Individual*>(Individual*)
+  [83] create_gnome[abi:cxx11]() [58] std::vector<Individual, std::allocator<Individual> >::max_size() const [92] Individual* std::__niter_base<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  [49] mutated_genes()       [131] std::allocator<Individual>::allocator() [127] Individual const* std::__niter_base<Individual const*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >)
+ [100] __static_initialization_and_destruction_0(int, int) [132] std::allocator<Individual>::~allocator() [91] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__niter_wrap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual*)
+   [4] Individual::cal_fitness() [64] Individual* std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m<Individual const*, Individual*>(Individual const*, Individual const*, Individual*) [16] Individual* std::__relocate_a<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&)
+   [2] Individual::mate(Individual) [111] std::char_traits<char>::length(char const*) [51] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_a<false, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+   [3] Individual::Individual(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [87] void std::_Destroy_aux<false>::__destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [67] void std::__heap_select<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  [39] Individual::Individual(Individual&&) [80] void std::_Destroy_aux<false>::__destroy<Individual*>(Individual*, Individual*) [94] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::move_backward<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  [33] Individual::Individual(Individual const&) [37] std::_Vector_base<Individual, std::allocator<Individual> >::_M_allocate(unsigned long) [65] Individual* std::__copy_move_a1<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*)
+  [28] Individual::~Individual() [133] std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::_Vector_impl() [66] Individual* std::__copy_move_a2<false, Individual const*, Individual*>(Individual const*, Individual const*, Individual*)
+  [68] Individual::operator=(Individual&&) [76] std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl::~_Vector_impl() [17] Individual* std::__relocate_a_1<Individual*, Individual*, std::allocator<Individual> >(Individual*, Individual*, Individual*, std::allocator<Individual>&)
+  [55] Individual::operator=(Individual const&) [120] std::_Vector_base<Individual, std::allocator<Individual> >::_M_deallocate(Individual*, unsigned long) [43] void std::__insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+ [121] __gnu_cxx::new_allocator<Individual>::deallocate(Individual*, unsigned long) [134] std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_impl_data::_Vector_impl_data() [9] void std::__introsort_loop<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, long, __gnu_cxx::__ops::_Iter_less_iter)
+  [71] void __gnu_cxx::new_allocator<Individual>::destroy<Individual>(Individual*) [56] std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() [113] std::iterator_traits<char const*>::iterator_category std::__iterator_category<char const*>(char const* const&)
+  [61] __gnu_cxx::new_allocator<Individual>::allocate(unsigned long, void const*) [135] std::_Vector_base<Individual, std::allocator<Individual> >::_Vector_base() [19] void std::__relocate_object_a<Individual, Individual, std::allocator<Individual> >(Individual*, Individual*, std::allocator<Individual>&)
+  [29] void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual const&>(Individual*, Individual const&) [77] std::_Vector_base<Individual, std::allocator<Individual> >::~_Vector_base() [12] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  [25] void __gnu_cxx::new_allocator<Individual>::construct<Individual, Individual>(Individual*, Individual&&) [122] std::allocator_traits<std::allocator<Individual> >::deallocate(std::allocator<Individual>&, Individual*, unsigned long) [95] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+ [128] __gnu_cxx::new_allocator<Individual>::new_allocator() [72] void std::allocator_traits<std::allocator<Individual> >::destroy<Individual>(std::allocator<Individual>&, Individual*) [18] void std::__final_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+ [129] __gnu_cxx::new_allocator<Individual>::~new_allocator() [63] std::allocator_traits<std::allocator<Individual> >::allocate(std::allocator<Individual>&, unsigned long) [70] void std::__move_median_to_first<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+ [138] __gnu_cxx::__alloc_traits<std::allocator<Individual>, Individual>::_S_propagate_on_copy_assign() [59] std::allocator_traits<std::allocator<Individual> >::max_size(std::allocator<Individual> const&) [98] Individual* std::__copy_move_backward_a1<true, Individual*, Individual*>(Individual*, Individual*, Individual*)
+  [40] bool __gnu_cxx::__is_null_pointer<char const>(char const*) [26] void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual const&>(std::allocator<Individual>&, Individual*, Individual const&) [99] Individual* std::__copy_move_backward_a2<true, Individual*, Individual*>(Individual*, Individual*, Individual*)
+  [78] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual* const&) [22] void std::allocator_traits<std::allocator<Individual> >::construct<Individual, Individual>(std::allocator<Individual>&, Individual*, Individual&&) [21] void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Val_less_iter)
+  [44] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator--() [97] Individual* std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<Individual*, Individual*>(Individual*, Individual*, Individual*) [20] void std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+ [108] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator++() [60] std::vector<Individual, std::allocator<Individual> >::_S_max_size(std::allocator<Individual> const&) [10] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+ [124] __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::__normal_iterator(Individual const* const&) [14] std::vector<Individual, std::allocator<Individual> >::_S_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&) [123] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [110] __gnu_cxx::__ops::__val_comp_iter(__gnu_cxx::__ops::_Iter_less_iter) [74] Individual& std::vector<Individual, std::allocator<Individual> >::emplace_back<Individual>(Individual&&) [119] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+ [130] __gnu_cxx::__ops::__iter_less_iter() [15] std::vector<Individual, std::allocator<Individual> >::_S_do_relocate(Individual*, Individual*, Individual*, std::allocator<Individual>&, std::integral_constant<bool, true>) [137] std::__lg(long)
+  [93] bool __gnu_cxx::operator==<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [11] void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual const&>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual const&) [52] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::copy<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  [30] bool __gnu_cxx::operator< <Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [90] void std::vector<Individual, std::allocator<Individual> >::_M_realloc_insert<Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual&&) [53] std::remove_reference<Individual&>::type&& std::move<Individual&>(Individual&)
+  [81] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::difference_type __gnu_cxx::operator-<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [84] std::vector<Individual, std::allocator<Individual> >::end() [6] void std::sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  [38] bool __gnu_cxx::operator!=<Individual*, std::vector<Individual, std::allocator<Individual> > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > const&) [96] std::vector<Individual, std::allocator<Individual> >::back() [35] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Individual> >, std::is_move_constructible<Individual>, std::is_move_assignable<Individual> >::value, void>::type std::swap<Individual>(Individual&, Individual&)
+ [117] __gnu_cxx::new_allocator<Individual>::_M_max_size() const [85] std::vector<Individual, std::allocator<Individual> >::begin() [7] void std::__sort<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter)
+  [57] __gnu_cxx::new_allocator<Individual>::max_size() const [73] std::vector<Individual, std::allocator<Individual> >::push_back(Individual&&) [45] Individual&& std::forward<Individual>(std::remove_reference<Individual>::type&)
+  [32] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::base() const [8] std::vector<Individual, std::allocator<Individual> >::push_back(Individual const&) [75] Individual const& std::forward<Individual const&>(std::remove_reference<Individual const&>::type&)
+  [31] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator*() const [136] std::vector<Individual, std::allocator<Individual> >::vector() [79] void std::_Destroy<Individual>(Individual*)
+  [86] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator-(long) const [42] std::vector<Individual, std::allocator<Individual> >::~vector() [88] void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  [82] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >::operator+(long) const [50] std::vector<Individual, std::allocator<Individual> >::operator=(std::vector<Individual, std::allocator<Individual> > const&) [89] void std::_Destroy<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, Individual>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, std::allocator<Individual>&)
+ [125] __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >::base() const [109] std::vector<Individual, std::allocator<Individual> >::operator[](unsigned long) [47] void std::_Destroy<Individual*>(Individual*, Individual*)
+  [69] bool __gnu_cxx::__ops::_Val_less_iter::operator()<Individual, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(Individual&, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [41] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [48] void std::_Destroy<Individual*, Individual>(Individual*, Individual*, std::allocator<Individual>&)
+  [23] bool __gnu_cxx::__ops::_Iter_less_iter::operator()<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) const [34] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [114] std::iterator_traits<char const*>::difference_type std::distance<char const*>(char const*, char const*)
+ [118] std::_Vector_base<Individual, std::allocator<Individual> >::_M_get_Tp_allocator() const [112] std::iterator_traits<char const*>::difference_type std::__distance<char const*>(char const*, char const*, std::random_access_iterator_tag) [24] void std::iter_swap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >)
+  [62] std::vector<Individual, std::allocator<Individual> >::_M_check_len(unsigned long, char const*) const [107] Individual* std::__addressof<Individual>(Individual&) [36] operator<(Individual const&, Individual const&)
+ [139] std::vector<Individual, std::allocator<Individual> >::end() const [46] void std::__sort_heap<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >, __gnu_cxx::__ops::_Iter_less_iter&) [54] operator new(unsigned long, void*)
+ [116] std::vector<Individual, std::allocator<Individual> >::size() const [142] __gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual*, std::vector<Individual, std::allocator<Individual> > >) [5] _init
+ [140] std::vector<Individual, std::allocator<Individual> >::begin() const [126] __gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > std::__miter_base<__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > > >(__gnu_cxx::__normal_iterator<Individual const*, std::vector<Individual, std::allocator<Individual> > >) [27] frame_dummy
